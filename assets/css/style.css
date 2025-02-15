@@ -356,6 +356,38 @@ body{
     filter: brightness(125%);
 }
 
+
+
+.main-top-left > button{
+    background-color: var(--clr-sec-black);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+
+.artists-search{
+    padding: 15px;
+    margin: 5px 0;
+}
+.artists-search span i,.artists-search span{
+    color: var(--clr-gray);
+    cursor: pointer;
+}
+
+.artists-search span i:hover{
+    color: white;
+}
+
+.filter{
+    cursor: pointer;
+}
+.filter:hover{
+    scale: 1.02;
+}
+
+
 /* RIGHT */
 
 /* ================================ MAIN TOP END ================================ */
