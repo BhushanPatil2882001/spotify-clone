@@ -4,6 +4,8 @@
     --clr-gray: #b3b3b3;
     --clr-white: #fff;
     --acc-clr: #b49bc8;
+
+    --basic-transition: all 0.1s linear;
 }
 
 /* ================================ GENERAL ================================ */
@@ -103,9 +105,15 @@ body{
     background-color: var(--clr-sec-black);
     border-radius: 50%;
     cursor: pointer;
+    transition: var(--basic-transition);
 }
 .nav-mid-home-icon:hover{
     filter: brightness(125%);
+    scale: 1.02;
+}
+.nav-mid-home-icon:active{
+    filter: brightness(100%);
+    scale: 0.98;
 }
 .nav-mid-home-icon i{
     font-size: 1.5rem;
@@ -119,8 +127,25 @@ body{
     background-color: var(--clr-sec-black);
 }
 
+.nav-mid-search-text input{
+    outline: none;
+}
+.nav-mid .search-bar .nav-mid-search-text:hover{
+    filter: brightness(125%);
+}
+
 .nav-mid-search-icon{
     margin-right: 10px;
+    cursor: pointer;
+    transition: var(--basic-transition);
+}
+.nav-mid-search-icon:hover{
+    filter: brightness(125%);
+    scale: 1.02;
+}
+.nav-mid-search-icon:active{
+    scale: 0.98;
+    filter: brightness(100%);
 }
 
 .nav-mid-search-text{
@@ -134,10 +159,24 @@ body{
     font-size: 1rem;
     font-weight: bold;
 }
+.nav-mid-search-text input::placeholder{
+    color: var(--clr-gray);
+}
+
 
 .nav-mid-browse-icon{
     margin-right: 10px;
+    transform: translateY(3px);
     cursor: pointer;
+    transition: var(--basic-transition);
+}
+.nav-mid-browse-icon:hover{
+    filter: brightness(125%);
+    scale: 1.02;
+}
+.nav-mid-browse-icon:active{
+    scale: 0.98;
+    filter: brightness(100%);
 }
 .nav-mid-search-icon i{
     color: var(--clr-gray);
@@ -161,15 +200,43 @@ body{
     border-radius: 18px;
     font-weight: bold;
     cursor: pointer;
+    transition: var(--basic-transition);
 }
+.nav-left button:hover{
+    scale: 1.06;
+}
+.nav-left button:active{
+    scale: 1;
+}
+
 
 .nav-left .nav-btn-1{
     background-color: var(--clr-white);
     color: var(--clr-black);
 }
+.nav-left .nav-btn-1:hover{
+    filter: brightness(95%);
+}
+.nav-left .nav-btn-1:active{
+    filter: brightness(90%);
+}
 
-.nav-bell{
+.nav-left .nav-btn-2:hover{
+    color: var(--clr-white);
+}
+
+.nav-bell i{
     cursor: pointer;
+    color: var(--clr-gray);
+    transition: var(--basic-transition);
+}
+.nav-bell:hover{
+    filter: brightness(125%);
+    scale: 1.02;
+}
+.nav-bell:active{
+    filter: brightness(100%);
+    scale: 0.98;
 }
 
 .acc-img{
@@ -179,6 +246,10 @@ body{
     height: 40px;
     width: 40px;
     cursor: pointer;
+    transition: var(--basic-transition);
+}
+.acc-img:hover{
+    scale: 1.02;
 }
 
 .acc-img span{
@@ -227,5 +298,29 @@ body{
     .col-s-12 {width: 100%;}
     *[class^="col-s"]{
         padding: 0 12px;
+    }
+
+    .nav-mid-search-text{
+        display: none;
+    }
+    .search-bar{
+        width: auto;
+    }
+}
+
+@media(max-width: 570px){
+
+    .nav-mid-column{
+        display: none;
+    }
+    .nav-mid-home-icon{
+        display: none;
+    }
+    .search-bar{
+        display: none;
+    }
+    .nav-right-column{
+        margin-left: auto;
+        width: 90%;
     }
 }
