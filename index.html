@@ -44,8 +44,8 @@
                 </div>
                 <div class="col-4 col-s-8 nav-right-column">
                     <div class="nav-left  flex align-center justify-end gap-20">
-                        <button class="nav-btn-1">Explore Premium</button>
-                        <button class="nav-btn-2">Install App</button>
+                        <button class="nav-btn-1 btn">Explore Premium</button>
+                        <button class="nav-btn-2 btn">Install App</button>
                         <span class="nav-bell">
                             <i class="ri-notification-2-line"></i>
                         </span>
@@ -63,10 +63,10 @@
     <!-----------------------------MAIN START----------------------------->
     <main>
         <!-----------------------------MAIN TOP START----------------------------->
-        <div class="container main-top-container flex">
-            <div class="col-3">
+        <div class="container main-top-container flex wrap">
+            <div class="col-3 col-s2-12 col-s-4">
                 <div class="main-top-left">
-                    <div class="library flex justify-between align-center wrap">
+                    <div class="library flex justify-between align-center wrap gap-10">
                         <div class="library-left">
                             <span class="flex align-center gap-10">
                                 <i class="ri-book-shelf-fill"></i>
@@ -74,7 +74,7 @@
                             </span>
                         </div>
                         <div class="library-right flex align-center gap-10">
-                            <button class="flex align-center">
+                            <button class="flex align-center btn">
                                 <span><i class="ri-add-line"></i></span>
                                 Create
                             </button>
@@ -83,15 +83,164 @@
                             </span>
                         </div>
                     </div>
-                    <button>Artists</button>
+                    <button class="btn">Artists</button>
                     <div class="artists-search flex justify-between">
                         <span><i class="ri-search-line"></i></span>
                         <span class="filter flex gap-10">Recents<i class="ri-list-check"></i></span>
                     </div>
+                    <div class="artists-list flex flex-column">
+                        <div class="artist flex align-center gap-10">
+                            <div class="artist-photo">
+                                <img src="./assets/images/artists/shan.webp" alt="">
+                            </div>
+                            <div class="artist-name">
+                                <p>Shaan</p>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist flex align-center gap-10">
+                            <div class="artist-photo">
+                                <img src="./assets/images/artists/papon.webp" alt="">
+                            </div>
+                            <div class="artist-name">
+                                <p>Papon</p>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist flex align-center gap-10">
+                            <div class="artist-photo">
+                                <img src="./assets/images/artists/Arijit-singh.webp" alt="">
+                            </div>
+                            <div class="artist-name">
+                                <p>Arijit Singh</p>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist flex align-center gap-10">
+                            <div class="artist-photo">
+                                <img src="./assets/images/artists/shreya-ghoshal.webp" alt="">
+                            </div>
+                            <div class="artist-name">
+                                <p>Shreya Ghoshal</p>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist flex align-center gap-10">
+                            <div class="artist-photo">
+                                <img src="./assets/images/artists/sonu-nigam.webp" alt="">
+                            </div>
+                            <div class="artist-name">
+                                <p>Sonu Nigam</p>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="main-top-right"></div>
+            <div class="col-6 col-s2-12 col-s-8 main-t-r">
+                <div class="main-top-right">
+                    <div class="container right-container">
+                        <div class="right-top">
+                            <button class="btn active filter-btn">All</button>
+                            <button class="btn filter-btn">Music</button>
+                            <button class="btn filter-btn">Podcasts</button>
+                        </div>
+                        <div class="made-for-section flex">
+                            <div class="card flex flex-column gap-10">
+                                <div>
+                                    <div class="flex align-center justify-center">
+                                        <img src="./assets/images/covers/1.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <p>Ram Sampath, Sona Mahapatra, Kanika...</p>
+                            </div>
+                            <div class="card flex flex-column gap-10">
+                                <div>
+                                    <div class="flex align-center justify-center">
+                                        <img src="./assets/images/covers/2.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <p>Amit Trivedi, Sunidhi Chauhan, Neeraj...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-s2-12 col-s-12 main-queue ">
+                <div class="queue">
+                    <div class=" queue-top flex justify-between">
+                        <p>Queue</p>
+                        <div class="queue-close">
+                            <i class="ri-close-line"></i>
+                        </div>
+                    </div>
+                    <p>Now Playing</p>
+                    <div class="now-playing">
+                        <div class="song playing">
+                            <div class="song-cover">
+                                <img src="./assets/images/song-covers/nhi-milta.jpeg" alt="">
+                            </div>
+                            <div class="song-details">
+                                <h4 class="playing">Nahin Milta</h4>
+                                <p>Bayaan</p>
+                            </div>
+                        </div>
+                        <div class="song">
+                            <div class="song-cover">
+                                <img src="./assets/images/song-covers/nhi-milta.jpeg" alt="">
+                            </div>
+                            <div class="song-details">
+                                <h4>Nahin Milta</h4>
+                                <p>Bayaan</p>
+                            </div>
+                        </div>
+                        <div class="song">
+                            <div class="song-cover">
+                                <img src="./assets/images/song-covers/nhi-milta.jpeg" alt="">
+                            </div>
+                            <div class="song-details">
+                                <h4>Nahin Milta</h4>
+                                <p>Bayaan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="media-player flex">
+            <div class="container flex align-center">
+                <div class="col-4">
+                    <div class="media-left">
+                        <div class="media-player-song">
+                            <div class="media-player-song-image">
+                                <img src="./assets/images/song-covers/nhi-milta.jpeg" alt="">
+                            </div>
+                            <div class="song-details">
+                                <h4>Nahin Milta</h4>
+                                <p>Bayaan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="media-mid">
+                        <div class="seekbar-top">
+                            <i class="ri-skip-left-line"></i>
+                            <i class="ri-play-circle-fill"></i>
+                            <i class="ri-skip-right-line"></i>
+                        </div>
+                        <div class="seekbar-bottom">
+                            <input type="range" min="0" value="0" max="100" id="seekbar">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 media-right-column flex align-center justify-end">
+                    <div class="media-right">
+                        <i class="ri-mic-line"></i>
+                        <i class="ri-phone-line"></i>
+                        <i class="ri-volume-down-line"></i>
+                    </div>
+                </div>
             </div>
         </div>
         <!-----------------------------MAIN TOP END----------------------------->
