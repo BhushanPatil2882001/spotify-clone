@@ -529,7 +529,8 @@ h4.playing{
 
 .media-player{
     padding: 0 20px;
-    position: fixed;
+    position: sticky;
+    bottom: 0;
     height: 80px;
     width: 100%;
     background-color: var(--clr-sec-black);
